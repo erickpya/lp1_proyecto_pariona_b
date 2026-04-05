@@ -1,7 +1,6 @@
 package com.cibertec.dao;
 
 import java.util.List;
-
 import com.cibertec.entidad.Countries;
 
 public interface ICountriesDao {

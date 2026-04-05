@@ -6,6 +6,4 @@ public class Countries {
 	private String countryId;
 	private String countryName;
 	private int regionId;
-
-
 }
