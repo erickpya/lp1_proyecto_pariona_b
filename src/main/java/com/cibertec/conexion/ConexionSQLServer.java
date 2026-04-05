@@ -8,9 +8,16 @@ import java.sql.SQLException;
 
 import javax.swing.JOptionPane;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.cibertec.utils.ConstantesQuery;
 
 public class ConexionSQLServer {
+	
+	private static final Logger LOG = LogManager.getLogger(ConexionSQLServer.class);
+
+	
 	public static void main(String[] args) {
 		conexion();
 
@@ -29,6 +36,7 @@ public class ConexionSQLServer {
 		try {
 			con = DriverManager.getConnection(urlConexion, usuarioBD, passwordBD);
 		} catch (SQLException ex) {
+			LOG.error("conexion()-Error : " + ex.getMessage());
 			System.out.println("Error al conectar: " + ex.getMessage());
 			ex.printStackTrace();
 		}
