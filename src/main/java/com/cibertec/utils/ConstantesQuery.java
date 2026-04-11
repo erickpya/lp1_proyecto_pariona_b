@@ -24,5 +24,20 @@ public class ConstantesQuery {
 	/* FIN QUERY PARA LA TABLA COUNTRIES */
 
 	/* PARA OTRAS TABLAS ...... */
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }

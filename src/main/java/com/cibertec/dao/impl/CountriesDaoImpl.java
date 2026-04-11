@@ -1,4 +1,4 @@
-package com.cibertec.dao;
+package com.cibertec.dao.impl;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -9,6 +9,7 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import com.cibertec.conexion.ConexionSQLServer;
+import com.cibertec.dao.ICountriesDao;
 import com.cibertec.entidad.Countries;
 import com.cibertec.utils.ConstantesQuery;
 
